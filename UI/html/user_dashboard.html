@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>TwK User Dashboard</title>
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#holder{
+background-color:#FFFFFF;
+width:100%;
+height:100%;
+position:absolute;
+top:0px;
+
+
+}
+
+#menubar{
+background-color:rgb(106, 182, 247);
+width:15%;
+height:150%;
+position:fixed;
+top:0px;
+
+
+
+}
+ul li{
+list-style-type:none;
+font-size:20px;
+font-family:calibri;
+color:#FFFFFF;
+padding:10px;
+margin-top:20px;
+border-bottom:solid white 2px;
+border-left:solid white 2px;
+
+}
+a{
+text-decoration:none;
+}
+#menubar ul li a:hover{
+background-color:#333333;
+}
+.textareas{
+width:84%;
+height:50%;
+position:absolute;
+top:42%;
+left:15%;
+border:solid 1px blue;
+}
+.savee{
+border:none;
+background-color:#000000;
+color:#FFFFFF;
+height:3%;
+position:absolute;
+left:80%;
+top:96%;
+width:5%;
+border-radius:3px;
+
+}
+
+.cancel{
+border:none;
+background-color:#990000;
+color:#FFFFFF;
+height:3%;
+position:absolute;
+left:92%;
+top:96%;
+width:5%;
+border-radius:3px;
+
+}
+
+.share{
+border:none;
+background-color:rgb(106, 182, 247);
+color:#FFFFFF;
+height:3%;
+position:absolute;
+left:86%;
+top:96%;
+width:5%;
+border-radius:3px;
+
+}
+
+
+
+#table{margin-left: 250px;
+    margin-top: 50%;
+	background-color:white;
+	border-radius:5px;
+	}
+#title{width:92%;padding:20px;
+color:#000033;}
+
+
+#look{font-family:monospace;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	background: #039FF9;
+	border-radius:2px;}
+	#edit{
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	background:#000000;
+	border-radius:2px;
+	font-family:monospace;}
+	
+	#share{;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	background: #F48749;
+	border-radius:2px;
+	font-family:monospace;}
+	
+	#delete{font-family: monospace;
+	border:none;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius:2px;
+	font-family:monospace;
+	background-color:#990000;}
+	
+	#td11 {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width:100%;
+  height:40%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  color:#000033;
+  font-family:monospace;
+  font-weight:bold;
+  padding: 8px;
+}
+
+	
+</style>
+</head>
+
+<body>
+<div id="holder">
+<div id="menubar">
+<ul>
+<a href="Profile.html"><li>Profile</li></a>
+<a href="user_dashboard.html"><li>DashBoard</li></a>
+<a href="#title"><li>My Articles</li></a>
+<a href="other's_articles.html"><li>Other's Articles</li></a>
+<a href="index.html"><li>Logout</li></a>
+
+
+</ul>
+</div>
+<form action="" method="post" id="actions_frm">
+<textarea class="textareas" placeholder="Write Your Article"></textarea>
+<input type="submit"  name="savee" value="Save" class="savee"/>
+<input type="submit"  name="cancel" value="cancel" class="cancel" onclick="resetForm('actions_frm'); return false;"/>
+<input type="submit"  name="share" value="share" class="share"/>
+
+</form>
+
+
+
+
+   <div  id="table">
+   
+   <h2 id="title">YOUR ARTICLES</h2>
+               <table border="" id="td11">
+  <tr>
+    <th>ID</th>
+    <th >TITLE</th>
+    <th >ACTION</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>New Shampo Leaves ur hair  </td>
+    <td><button id="look">View</button>  <button id="edit">Edit</button> <button id="share">Share</button> <button id="delete">Delete</button> </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>How do I double my money with facebook Ads</td>
+    <td><button id="look">View</button> <button id="edit">Edit</button> <button id="share">Share</button> <button id="delete">Delete</button> </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Leaning Digital media is A Luxury</td>
+    <td><button id="look">View</button> <button id="edit">Edit</button> <button id="share">Share</button> <button id="delete">Delete</button> </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>This Blod post will make you more money guaranted </td>
+    <td><button id="look">View</button> <button id="edit">Edit</button> <button id="share">Share</button> <button id="delete">Delete</button> </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Every Internet Enterpreneur regrets not doing this sooner</td>
+    <td><button id="look">View</button> <button id="edit">Edit</button> <button id="share">Share</button> <button id="delete">Delete</button> </td>
+  </tr>
+ 
+</table>
+<br><br>
+               
+             
+
+            </div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+   function resetForm(actions_frm)
+   {
+       var myForm = document.getElementById(addarticle);
+
+       for (var i = 0; i < myForm.elements.length; i++)
+       {
+           if ('submit' != myForm.elements[i].type && 'reset' != myForm.elements[i].type)
+           {
+               myForm.elements[i].checked = false;
+               myForm.elements[i].value = '';
+               myForm.elements[i].selectedIndex = 0;
+           }
+       }
+   }
+</script>
+</body>
+</html>
