@@ -278,6 +278,10 @@ top:-100px;
 left:310px;
 
 }
+#FAQ{
+text-decoration:none;
+color:#000000;
+}
 a{
 text-decoration:none;
 color:rgb(106, 182, 247);
@@ -293,7 +297,7 @@ color:rgb(106, 182, 247);
 <div id="logo"></div>
 <div id="menus">
 <ul>
-<li>FAQ</li>
+<a href="" id="FAQ"><li>FAQ</li></a>
 </ul>
 </div>
 <div id="signup"><p>LOGIN</p></div>
@@ -303,8 +307,8 @@ color:rgb(106, 182, 247);
 <p class="long_sentence">"Teamwork is the ability to work together toward a common vision. <br />The ability to direct individual accomplishments toward organizational objectives. It <br />is the fuel that allows common people to attain uncommon results." -Andrew Carnegie</p>
 <form action="createaccount.html" method="post">
 <input type="text" placeholder="Twk(Teamwork)" class="disable" disabled="disabled"/>
-<input type="submit" name="start" value="GET STARTED"  class="startbtn"/>
 </form>
+<a href="user_dashboard.html" id="getstart"><input type="submit" name="start" value="GET STARTED"  class="startbtn"/></a>
 </div>
 <div id="picture"></div>
 
@@ -317,13 +321,14 @@ color:rgb(106, 182, 247);
     <h2 class="login_header">LogIn</h2>
 	<hr class="hrr" />
 	<form action="user_dashboard.html" method="post">
+	</form>
 	<table>
 	<tr><td class="td2">UserName</td><td><input type="text" name="username"  class="td1" required/></td></tr>
 	<tr><td class="td2">Password</td><td><input type="password" name="password" class="td1" required  /></td></tr>
-	<tr><td><input type="checkbox" name="remember" /></td><td class="remember">Remember me</td><td><input type="submit" name="logino" value="Login"  class="submit"/></td></tr>
+	<tr><td><input type="checkbox" name="remember" /></td><td class="remember">Remember me</td><td><a href="user_dashboard.html"><input type="submit" name="logino" value="Login"  class="submit"/></a></td></tr>
 	</table>
 	<div class="linkk"><h2>Not a Member Yet? <br /><a href="createaccount.html">Sign Up</a></h2></div>
-	</form>
+	
 	
   </div>
 
