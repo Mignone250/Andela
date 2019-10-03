@@ -77,6 +77,7 @@ top:87%;
 width:5%;
 border-radius:3px;
 cursor:pointer;
+monospace:monospace;
 
 }
 .delete{
@@ -181,7 +182,20 @@ text-align:center;
 
     }
 
-	
+	.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
 	
 
 	
@@ -199,40 +213,32 @@ text-align:center;
 <a href="index.html"><li>Logout</li></a>
 
 
-
 </ul>
 </div>
 <div><img src="../images/cover2.jpg" width="197" height="256" style="position:absolute; left:22%; top:9%;" /></div>
 <form action="" method="post" id="actions_frm">
 
 <h2 id="title1">New Shampo Leaves ur hair </h2>
-<div id="divo">Victory seemed unlikely. Mount Saint Michael were two sets down and St. Leo’s certainly had the upper hand in the third set, dominating 9 points to 2. Each time St. Leo’s scored, they pounded the ground in unison, further intimidating an already shaky Claremorris team. So how, in these circumstances, did they snatch victory from the jaws of almost certain defeat?<br /><br /><br />
-The first set seemed to suggest two teams who were equally matched. Michael’s fought point for point against a Leo’s team whose defence was almost impenetrable, yet Edel Nolan managed to hit home some impressive spikes. However, as the set drew to a close, they found themselves unable to finish the job and St Leo’s stormed into the second set with a 25-22 win in the first set under their belt.</br><br /><br />
+<div id="divo">Victory seemed unlikely. Mount Saint Michael were two sets down and St. Leos certainly had the upper hand in the third set, dominating 9 points to 2. Each time St. Leo's scored, they pounded the ground in unison, further intimidating an already shaky Claremorris team. So how, in these circumstances, did they snatch victory from the jaws of almost certain defeat?<br /><br /><br />
+The first set seemed to suggest two teams who were equally matched. Michael's fought point for point against a Leo's team whose defence was almost impenetrable, yet Edel Nolan managed to hit home some impressive spikes. However, as the set drew to a close, they found themselves unable to finish the job and St Leo's stormed into the second set with a 25-22 win in the first set under their belt.</br><br /><br />
 This is where it all went wrong for Claremorris. Having lost the first set, their nerves took over and their difficulty settling into the match was evident in a plethora of unforced errors, despite excellent positioning by Nikki Hanley and impact substitutions by Lisa McGreal and Jackie Prendergast. They lost the second set 25-19 and hope began to fade for their 200+ supporters.<br /><br /><br />
-The third set began in similar fashion but sensing that they now had nothing to lose – except of course the All-Ireland Title – the team lifted their game tremendously, aided by the now deafening cries of their desperate supporters, led by Lisa Brett and Chloe Hughes. Strategic use of time outs by coach Fionnghuala King saw the girls finally settle into the match. She no doubt reminded them of their team mantra – no matter how badly things seem to be going ‘don’t lose your marbles’.<br /><br /><br /> 
+The third set began in similar fashion but sensing that they now had nothing to lose – except of course the All-Ireland Title – the team lifted their game tremendously, aided by the now deafening cries of their desperate supporters, led by Lisa Brett and Chloe Hughes. Strategic use of time outs by coach Fionnghuala King saw the girls finally settle into the match. She no doubt reminded them of their team mantra – no matter how badly things seem to be going don't lose your marbles'.<br /><br /><br /> 
 </div>
 <input type="submit"  name="comment" value="Comment" class="cancel"/>
-<button  type="button" id="share">Share</button>
+<button  type="button" id="share">Commment</button>
 <input type="submit"  name="delete" value="Delete" class="delete"/>
 </form>
 
  <div id="myModal" class="modal">
         
           
-          <div class="modal-content">
+          <div class="modal-content animate">
             <span class="close">&times;</span>
 			<form action="" method="post" enctype="multipart/form-data">
-            <h2 class="headerr">Share With<br /></br><br />
-			<select class="people" required>
-                <option>&nbsp;&nbsp;-Select-</option>
-                <option>Amata Uwimpuhwe</option>
-                <option>Grace Kabanyana</option>
-                <option>Bahati Grace</option>
-				<option>	Annette Tumunde</option>
-				<option>Christelle Iradukunda</option>
-                <option>All</option>
+            <h2 class="headerr">Write Your Comment Here<br /></br><br />
+			<textarea placeholder="Write Your Comment" class="people"></textarea>
              </select><br><br><br><br><br><br>
-<button type="submit" class="sharee">SHARE</button>
+<button type="submit" class="sharee">Comment</button>
 			
 			</h2>
           </div>
