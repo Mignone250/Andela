@@ -4,181 +4,518 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/entry.css">
+    <link rel="stylesheet" href="../css/styles2.css">
     <title>Document</title>
-	<style>
-	body{
-  background-color:  #F2EFF0;
+	
+	
+	
+<style>
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	margin-left: 0%;
+	padding:0;
 }
-
-.navbar{
-
-background-color:#333333;
-height: 66px;
+#holder{
+background-color:#FFFFFF;
 width:100%;
-}
-.navbar ul li {
-list-style-type: none;
+height:100%;
+position:absolute;
+top:0px;
 
-
-
-}
-.navbar ul{
-display: flex;
-justify-content: flex-end;
-margin-top: 0px;
-margin-right: 0px;
-margin-left: auto;
-
-}
-.navbar ul li a {
-text-decoration: none;
-color:tan;
-font-size: 20px;
-padding: 10px;  
-font-family: sans-serif
-}
-.navbar ul li a:hover {
-  color:#DED4D8;
-  background: #142034;
 
 }
 ::placeholder{
-text-align: left;
+line-height:170%;
+font-size:18px;
+font-family:monospace;
+background-color:#FFFFFF;
 }
 
-.logo{
-margin-top: 0px;
-padding: 0px;
-padding-right: 0px;
+#menubar{
+background-color:rgb(106, 182, 247);
+width:15%;
+height:150%;
+position:fixed;
+top:0px;
+
+
+
+}
+ul li{
+list-style-type:none;
+font-size:20px;
+font-family:calibri;
+color:#FFFFFF;
+padding:10px;
+margin-top:20px;
+border-bottom:solid white 2px;
+border-left:solid white 2px;
+
+}
+a{
+text-decoration:none;
+}
+#menubar ul li a:hover{
+background-color:#333333;
+}
+#divo{
+width:50%;
+height:50%;
+position:absolute;
+top:8%;
+left:35%;
+font-family:Lucida Bright;
+font-size:18px;
+color:#333333;
+text-align:justify;
+
+
+}
+#share{
+border:none;
+background-color:#000000;
+color:#FFFFFF;
+height:3%;
+position:absolute;
+left:22%;
+top:87%;
+width:5%;
+border-radius:3px;
+cursor:pointer;
+monospace:monospace;
+
+}
+.delete{
+border:none;
+background-color:#FF0000;
+color:#FFFFFF;
+height:3%;
+position:absolute;
+left:28%;
+top:87%;
+width:5%;
+border-radius:3px;
+cursor:pointer;
+
 }
 
 
-.entr{
-    margin-left: 200px;
-    margin-top: -500px;
+
+
+#table{margin-left: 250px;
+    margin-top: 30%;
+	background-color:white;
+	border-radius:5px;
+	}
+
+
+#title1{width:92%;padding:20px;
+margin-left:34%;
+text-transform:capitalize;
+font-weight:bolder;
+font-family:monospace;
+font-size:25px;
+margin-top:-12px;
+color:rgb(106, 182, 247);
+font-family:Lucida Bright;}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
+
+.modal-content {
+  background-color:#edf4fa;
+  margin:auto;
+  position:absolute;
+  left:36%;
+  top:27%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.close {
+  color:rgb(106, 182, 247);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+.headerr{
+text-align:center;
+font-family:monospace;
+}
+.people{
+width:400px;
+height:50px;
+border-radius:5px;
+text-align:center;
+
+}
+
+.sharee {
+      background-color:rgb(106, 182, 247);
+      color:#FFFFFF;
+      font-size:12px;
+      text-align:center;
+      border-radius:2px;
+      font-weight:bold;
+      cursor:pointer;
+	  border-style:none;
+	  font-family:monospace;
+	  width:100px;
+	  height:25px;
+	  
+
+
+    }
+#title1{font-size:50px;color:#3C7792;font-family:tahoma}
+#content1{font-size:20px;color:grey;font-family:times new roman}
+#table{background-color:white;width:100%; position:absolute; top:75%;}
+body{background-color:#white;background-repeat:no-repeat;background-size:cover;}
+
+.entre{
+margin-left:260px;
+margin-top:-600px;
+align-items:center;
+
+}
+.entree{
+margin-left:260px;
+margin-top:-500px;
+align-items:center;
+
+}
+.textareas{
+width:90%;
+height:300px;
+border:solid 1px #6E9095;
+}
+.contento{width:90%;font-family:courier}
+.titletext{
+width:90%;
+font-size:20px;
+font-weight:bold;
+
+}
+
 .text{width:50%;}
 .profile{
     margin-top: 0px;
-	background-color:#000000;
-	width:25%;
-	height:580px;
-	
-  
+background-color:#6E9095;
+width:25%;
+height:510px;
+
+}
+.profileoo{
+    margin-top: 0px;
+background-color:#6E9095;
+width:25%;
+height:610px;
+
+}
+.profileoo a{
+   color:#242B2E;
+   text-decoration:none;
+ 
+}
+.profileoo a:hover{
+   color:chocolate;
+   
+}
+.profile1{
+    margin-top: 0px;
+background-color:#6E9095;
+width:25%;
+height:600px;
+
+ 
 }
 .dash{
-  
-	border-bottom:solid grey;
-	border-top:solid grey;
-  
+ 
+border-bottom:solid #E3E7E8;
+border-top:solid #E3E7E8;
+ 
 }
 .dash:hover{
-	color:tan;
-    background-color:grey; 
+color:chocolate;
+    background-color:#E3E7E8;
+border-bottom:solid 1px #3C7792;
 }
-.dash a{
-   color:white;
+.profile a{
+   color:#242B2E;
    text-decoration:none;
-  
-}
-.dash a:hover{
-   color:tan;
  
-  
 }
-#title{width:92%;padding:20px;}
+.profile a:hover{
+   color:chocolate;
+   
+}
+.profile1 a{
+   color:#242B2E;
+   text-decoration:none;
+ 
+}
+.profile1 a:hover{
+   color:chocolate;
+   
+}
+#title3{width:92%;padding:20px;}
 #article{width:95%;height:300px;}
-.Dashboard-recent{
-    display: flex;
-    flex-wrap: wrap;
+.title{font-family:tahoma;color:grey;}
 
-}
-#view{margin-left: 200px;
-    margin-top: -500px;}
-#table{margin-left: 250px;
-    margin-top: -550px}
-#profileinfo{;
-	background-color:white;
-	width:80%;
-	height:230px;
-	border-radius:5px;
-	}
-#profileinfo1{;
-	background-color:white;
-	width:80%;
-	height:300px;
-	border-radius:5px;
-	}
-#movee{
-	margin-left:40px;
-	}
-.editor{
-    width: 90%;
-    flex: 5 5px;
-}
+.save{
 
-.recent-story-div{
-    background: rgb(241, 243, 243);
-    color: #000008;
-    width: 25%;
-    height: 30vh; 
-    display: flex;
-    justify-content: center;
-    border-radius: 0.5em;
-    font-size: 18px;
-    font-family: Georgia;
-    margin: 1%;
-    
-}
-.recent-story-div a{
-    text-decoration: none;
-    color: black;
-}
-#comment{margin-top:140px;margin-left:60px;
 font-family: Montserrat-Bold;
-	border:none;
-	color: #fff;
-	text-transform: uppercase;
-	width: 100px;
-	border-radius: 5px;
-	background: #039FF9;
+font-size: 13px;
+line-height: 2.7;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+border-radius: 5px;
+background: #039FF9;
+justify-content: center;
+align-items: center;
+padding: 10px;
 }
+.save:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+}
+.cance{
+    background-color:#F71A6E;
+font-family: Montserrat-Bold;
+font-size: 13px;
+line-height: 2.7;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+padding: 10px;
+ 
+}
+.cance:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+cursor:pointer;
+}
+
+.share{
+    background-color:#57b846;
+font-family: Montserrat-Bold;
+font-size: 13px;
+line-height: 2.7;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+border-radius: 5px;
+justify-content: center;
+align-items: center;
+padding: 10px;
+ 
+}
+.share:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+cursor:pointer;
+}
+
+.cancee{
+    background-color:#F71A6E;
+font-family: Montserrat-Bold;
+font-size: 13px;
+line-height: 2.7;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+
+justify-content: center;
+align-items: center;
+
+ 
+}
+.cancee:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+cursor:pointer;
+}
+
+.sharee{
+    background-color:#57b846;
+font-family: Montserrat-Bold;
+font-size: 13px;
+line-height: 2.7;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+
+justify-content: center;
+align-items: center;
+
+ 
+}
+.sharee:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+cursor:pointer;
+}
+.edit{
+    background-color:#039FF9;
+font-family: Montserrat-Bold;
+font-size: 13px;
+line-height: 2.7;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+
+justify-content: center;
+align-items: center;
+
+ 
+}
+.edit:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+cursor:pointer;
+}
+.comments{height:60px;width:50%;border:1px solid #039FF9}
+#comentto{
+    background-color:#039FF9;
+font-family: Montserrat-Bold;
+font-size: 13px;
+line-height: 4.5;
+border:none;
+color: #fff;
+position:relative;
+top:-25px;
+text-transform: uppercase;
+justify-content: center;
+align-items: center;
+
+ 
+}
+#comentto:hover{
+    background-color: #00324e;
+    color: #fcfcff;
+cursor:pointer;
+}
+#profiletable{width:20%;}
+.prof{border:none;}
+
+#table{
+    margin-left: 260px;
+    margin-top:-585px;
+width:70%;
+background-color:#FFFFFF;
+border-radius:5px;
+}
+#profileinfo{
+background-color:rgb(241, 243, 243);
+width:100%;
+height:230px;
+border-radius:5px;
+box-shadow:0 0 2px 2px grey;
+}
+#profileinfo1{
+background-color:rgb(241, 243, 243);
+width:100%;
+height:300px;
+border-radius:5px;
+box-shadow:0 0 2px 2px grey;
+}
+#movee{
+margin-left:40px;
+}
+
 
 #edit{font-family: Montserrat-Bold;
-	border:none;
-	color: #fff;
-	text-transform: uppercase;
-	background:#990000;
-	margin-left:465px;
-	margin-top:-600px;
-	}
-	
-	
-
+border:none;
+color: #fff;
+text-transform: uppercase;
+background: #039FF9;
+margin-left:465px;
+margin-top:-600px;
+cursor:pointer;
+}
 #profile{width:15%;height:150px;border-radius:50%;}
+#profileholder{align-items:margin-left:30px;}
+#profilee{border-radius:50%;}
+#profiletext{font-family:courier}
 #picture{font-family: Montserrat-Bold;
 padding:5px;
 border-radius:5px;
-	color: black;
-	text-transform: uppercase;
-	background: white;}
+color: black;
+text-transform: uppercase;
+background: white;
+cursor:pointer;}
 #profilecont{margin-left:300px;margin-top:-180px;font-family:tahoma}
-#title{background-color:#990000;width:95.5%;border-radius:5px;font-family:tahoma;color:white}
+#title{background-color:#039FF9;width:100%;border-radius:5px;font-family:tahoma;color:white;padding:20px;}
 #grey{color:grey}
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
+
+#title2{width:92%;padding:20px;font-family:tahoma;color:grey;text-align:center}
+#article{width:95%;height:300px;}
+
+#table2{margin-left: 200px;
+    margin-top: -500px;
+background-color:#E3E7E8;
+height:480px;
+border-radius:5px;
 }
 
-li a:hover {
-  background-color: #555;
-  color: white;
+#look{font-family: Montserrat-Bold;
+border:none;
+cursor:pointer;
+color: #fff;
+text-transform: uppercase;
+background: #039FF9;}
+#edit1{font-family: Montserrat-Bold;
+border:none;
+color: #fff;
+cursor:pointer;
+text-transform: uppercase;
+background: #57b846;}
+#delete1{font-family: Montserrat-Bold;
+border:none;
+color: #fff;
+cursor:pointer;
+text-transform: uppercase;
+background: #F71A6E;}
 
-}
+#share1{font-family: Montserrat-Bold;
+border:none;
+color: #fff;
+cursor:pointer;
+text-transform: uppercase;
+background: #F48749;}
+
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -191,80 +528,109 @@ td, th {
   padding: 8px;
 }
 
-	</style>
+
+#article{width:95%;height:300px;}
+.Dashboard-recent{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#view{margin-left: 200px;
+    margin-top: -500px;
+height:500px;
+width:80%;
+}
+.editor{
+    width: 90%;
+    flex: 5 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.article-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#comment{
+font-family: Montserrat-Bold;
+border:none;
+color: #fff;
+text-transform: uppercase;
+width: 100px;
+cursor:pointer;
+height:20px;
+background: #039FF9;
+
+}
+#View1{
+font-family: Montserrat-Bold;
+border:none;
+color: #fff;
+cursor:pointer;
+text-transform: uppercase;
+width: 100px;
+height:20px;
+background: #57b846;
+
+</style>
 </head>
 <body>
-        <div class="navbar">
-                
-            
-                <b><ul>
-                   <div><li>
-                        <a href="index.html">HOME</a>
-                    </li></div>
-                
-                </ul></b>
-            </div>
-			<div class="text dashboard">
-                <div class="profile">
-                    <div class="dash">
-                    <a href="profile.html"><p>PROFILE</p></a></div>
+<div id="main">
+        <div id="header">
+<img  class="imag" src="../assets/team.png">
+<div id="menu">
 
-                    <div class="dash">
-                            
-                            <a href="Dashboard.html"><p>DASHBOARD</p></a>      
-                    </div>
+<a class="inside" href="index.html"><span class="fa fa-home"></span><b> Home <b> </a>
+</div>
+</div>
+<div id="menubar">
+<ul>
+<a href="Profile.html"><li>Profile</li></a>
+<a href="user_dashboard.html"><li>DashBoard</li></a>
+<a href="user_dashboard.html"><li>My articles</li></a>
+<a href="other's.html"><li>Other's Articles</li></a>
+<a href="index.html"><li>Logout</li></a>
 
-                    <div class="dash">
-                            
-                            <a href="articles.html"><p>VIEW ARTICLES</p></a>       
-                    </div>
 
-                    <div class="dash">
-                            
-                            <a href="userpage.html"><p>ADD ARTICLES</p></a>      
-                    </div>
-
-                    <div class="dash">
-                            
-                            <a href="index.html"><p>LOGOUT</p></a>      
-                    </div>
-
-               
-                
-                </div>  
-            
-        
-        </div>
+</ul>
+</div>
    <div  id="table">
               <div id="profileinfo">
-			  <br><div id="movee">
-			  <img src="../assets/images/avatar.jpg" id="profile"><br>
-			  &nbsp <button id="picture">Upload Picture</button>
-			  </div>
-			  <div id="profilecont">
-			  <h2>Mignone Unguyeneza</h2><br>
-			  <p>Administrator </p>
-			  <p>Location: <strong>Kigali<strong></p>
-			  <button id="edit">EDIT PROFILE</button>
-			  </div>
-			  </div>
-			  <div id="profileinfo1">
-			  <h4 id="title">About</h4>
-			  <p><strong id="grey">Email</strong><br>Mignone@gmail.com</p>
-			  <hr>
-			  <p><strong id="grey">Phone Number</strong><br>0786656565655</p>
-			  <hr>
-			  <p><strong id="grey">Business Phone Number</strong><br>07278686863</p>
-			  <hr>
-			  
-			  </div>
-			  </div>
-    
+ <br><div id="movee">
+ <img src="../images/profile_avatar.png" id="profile"><br>
+ &nbsp <button id="picture">Upload Picture</button>
+ </div>
+ <div id="profilecont">
+ <h2>Mignone Unguyeneza</h2><br>
+ <p>Administrator</p>
+ <p>Location <strong>Kigali<strong></p>
+ <button id="edit">EDIT PROFILE</button>
+ </div>
+ </div>
+ <div id="profileinfo1">
+ <h4 id="title">About</h4>
+ <p><strong id="grey">Email</strong><br>Mignone@gmail.com</p>
+ <hr>
+ <p><strong id="grey">Business Phone</strong><br>999-0000-8888</p>
+ <hr>
+ <p><strong id="grey">Mobile Phone</strong><br>0788965433</p>
+ </div>
+ <br>
+ </div>
+ </div>
+   
        
-                
+               
 </body>
 </html>
 
-            
-
-          
