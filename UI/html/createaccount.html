@@ -211,6 +211,22 @@ font-weight:bold;
 color:#000000 !important;
 
 }
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
 </style>
 </head>
 
@@ -252,7 +268,7 @@ color:#000000 !important;
 <div id="myModal" class="modal">
 
   
-  <div class="modal-content">
+  <div class="modal-content animate">
     <span class="close">&times;</span>
     <h2 class="login_header">LogIn</h2>
 	<hr class="hrr" />
