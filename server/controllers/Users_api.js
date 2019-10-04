@@ -1,4 +1,6 @@
 import validateUser from './validate_User'
+import validatelogin from './validatelogin'
+
 import blog from '../models/db'
 
 class Users {
@@ -22,9 +24,9 @@ class Users {
         
     }
 
-    /*login (req, res) {
+    login (req, res) {
         
-        const { error } = validateUser(req.body);
+        const { error } = validatelogin(req.body);
         
         if(error) return res.status(400).send(error.details[0].message);
     
@@ -35,12 +37,14 @@ class Users {
 
         let loggedUser = blog.users[userIndex];
 
-        res.json({ 'status':200,'message':'successfully logged in','username': loggedUser.username })
+        res.json({ 'status':200,
+        'message':'successfully logged in',
+        'username': loggedUser.username })
     }
 
     getallUsers (req,res){
         res.send(blog.users);
-    };*/
+    };
 }
 
 export default Users = new Users()
